@@ -3,116 +3,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Software developer portfolio of Vinicius Octavio Pereira Cavalheiro, focused on backend development, REST APIs, SQL, Python, automation and reliable AI-assisted engineering.">
+  <meta name="description" content="Vinicius Cavalheiro — software developer focused on backend, REST APIs, SQL and automation. Explore paid freelance experience and selected projects.">
+  <meta name="theme-color" content="#f6f2fc">
   <title>Vinicius Cavalheiro | Software Developer</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Go to the beginning">VOC</a>
-    <nav aria-label="Main navigation">
-      <a data-i18n="navWork" href="#work">Work</a>
-      <a data-i18n="navProjects" href="#projects">Projects</a>
-      <a data-i18n="navAbout" href="#about">About</a>
-    </nav>
-    <div class="language" role="group" aria-label="Language">
-      <button class="language-button active" data-language="en" type="button">EN</button>
-      <button class="language-button" data-language="pt" type="button">PT</button>
+<body id="top">
+  <a data-i18n="skip" class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header shell">
+    <a class="brand" href="#top" data-i18n-aria="home" aria-label="Back to the beginning">vinicius<span aria-hidden="true"> / </span>cavalheiro</a>
+    <nav data-i18n-aria="navigation" aria-label="Main navigation"><a data-i18n="navWork" href="#work">Work</a><a data-i18n="navProjects" href="#projects">Projects</a><a data-i18n="navAbout" href="#about">About</a></nav>
+    <div class="language" role="group" data-i18n-aria="language" aria-label="Language">
+      <button data-language="en" type="button" aria-pressed="true" aria-label="English" lang="en">EN</button>
+      <button data-language="pt" type="button" aria-pressed="false" aria-label="Português" lang="pt-BR">PT</button>
     </div>
   </header>
-
-  <main id="top">
-    <section class="hero section-shell">
-      <p class="eyebrow" data-i18n="availability">Available for internships and junior roles in Brazil</p>
-      <h1 data-i18n="heroTitle">Software that turns complex operations into dependable workflows.</h1>
-      <p class="hero-copy" data-i18n="heroCopy">I am Vinicius Cavalheiro, a software developer and Computer Science student working with backend systems, REST APIs, SQL, Python, automation and controlled AI-assisted engineering.</p>
-      <div class="hero-actions">
-        <a class="button primary" data-i18n="viewWork" href="#work">View my work</a>
-        <a class="button secondary" href="https://github.com/ViniOcCode" rel="noreferrer">GitHub</a>
-        <a class="button secondary" href="https://www.linkedin.com/in/viniciusoccavalheiro/" rel="noreferrer">LinkedIn</a>
+  <main class="shell" id="content" tabindex="-1">
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p data-i18n="role" class="eyebrow">Software development / backend</p>
+        <h1 id="intro-title">Vinicius<br><span>Cavalheiro.</span></h1>
+        <p data-i18n="heroCopy" class="intro">APIs, integrations and automation for real operations. Computer Science student with experience delivering paid freelance projects.</p>
+        <div class="actions"><a data-i18n="viewWork" class="primary" href="#work">Explore my work ↓</a><a href="https://github.com/ViniOcCode">GitHub ↗</a><a href="https://www.linkedin.com/in/viniciusoccavalheiro/">LinkedIn ↗</a></div>
       </div>
-      <ul class="signal-list" aria-label="Professional highlights">
-        <li><strong>500+</strong><span data-i18n="signalListings">marketplace listings processed</span></li>
-        <li><strong>2</strong><span data-i18n="signalFreelance">paid freelance projects</span></li>
-        <li><strong>66/100</strong><span>EF SET English</span></li>
-      </ul>
+      <figure class="flow-illustration">
+        <svg viewBox="0 0 440 280" fill="none" aria-hidden="true" focusable="false">
+          <g stroke="currentColor" stroke-width="1.2"><path d="M20 50H110Q170 50 170 140H260M20 140H260M20 230H110Q170 230 170 140"/><circle cx="310" cy="140" r="50"/><circle cx="310" cy="140" r="72" opacity=".25"/><path d="M360 140H425"/></g>
+          <g fill="currentColor"><circle cx="20" cy="50" r="5"/><circle cx="20" cy="140" r="5"/><circle cx="20" cy="230" r="5"/></g>
+          <path d="m294 139 11 11 21-25" stroke="currentColor" stroke-width="2.5"/>
+          <text x="310" y="252" text-anchor="middle" fill="currentColor" stroke="none" data-i18n="validation">VALIDATION</text>
+        </svg>
+        <figcaption data-i18n="illustration">Conceptual illustration / workflows and validation</figcaption>
+      </figure>
     </section>
-
-    <section id="work" class="section-shell section-block">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="workEyebrow">Professional case study</p>
-        <h2 data-i18n="workTitle">Automation built for real operational pressure</h2>
-      </div>
-      <article class="case-study">
-        <div class="case-main">
-          <p class="case-index">01</p>
-          <h3>MLBot</h3>
-          <p class="case-lead" data-i18n="mlbotLead">A confidential production dashboard that automated Mercado Livre listing creation, publishing, editing and catalog-wide auditing.</p>
-          <ul class="feature-list">
-            <li data-i18n="mlbotFeature1">Independent ownership from architecture through implementation</li>
-            <li data-i18n="mlbotFeature2">OAuth2, marketplace APIs, cloud storage, Seller7 and Google Drive integrations</li>
-            <li data-i18n="mlbotFeature3">AI-assisted generation protected by validation harnesses, guardrails, tests and human review</li>
-          </ul>
-          <a class="text-link" data-i18n="readCase" href="https://vinioccode.github.io/mlbot-case-study/" rel="noreferrer">Read the sanitized case study <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="flow-card" aria-label="MLBot workflow">
-          <span data-i18n="flowInput">Product data</span><i></i>
-          <span data-i18n="flowBackend">Backend orchestration</span><i></i>
-          <span data-i18n="flowValidation">Validation and human review</span><i></i>
-          <span>Mercado Livre API</span>
-        </div>
-      </article>
+    <ul class="signals" data-i18n-aria="highlights" aria-label="Professional highlights"><li><strong>2</strong><span data-i18n="signalFreelance">paid freelance projects</span></li><li><strong>500+</strong><span data-i18n="signalListings">listings processed with MLBot</span></li></ul>
+    <section id="work" class="featured" aria-labelledby="work-title">
+      <p data-i18n="workEyebrow" class="eyebrow section-index">01 / Professional case study</p>
+      <article class="case-copy"><p class="eyebrow">MLBot</p><h2 id="work-title"><span data-i18n="workTitle">One operation.</span><br><span data-i18n="workTitleEnd">Four workflows.</span></h2><p data-i18n="mlbotLead">A dashboard for creating, publishing, editing and auditing Mercado Livre listings. I independently designed the architecture and implemented the system.</p><p data-i18n="mlbotDetails" class="case-details">External APIs, OAuth2 and cloud integrations. AI-assisted generation with validation and human review.</p><a data-i18n="readCase" class="text-link" href="https://vinioccode.github.io/mlbot-case-study/">Explore the sanitized case study ↗</a><p data-i18n="caseLanguage" class="caption case-language">Case in English · Portuguese summary available</p></article>
+      <div class="case-visual"><ol class="workflows" data-i18n-aria="workflowLabel" aria-label="The four MLBot workflows">
+        <li><span data-i18n="prepare" class="eyebrow">01 / PREPARE</span><strong data-i18n="create">Create</strong></li><li><span data-i18n="send" class="eyebrow">02 / SEND</span><strong data-i18n="publish">Publish</strong></li><li><span data-i18n="update" class="eyebrow">03 / UPDATE</span><strong data-i18n="edit">Edit</strong></li><li><span data-i18n="review" class="eyebrow">04 / REVIEW</span><strong data-i18n="audit">Audit</strong></li>
+      </ol><p data-i18n="confidential" class="caption">Public case study. Client code, data and screens remain private.</p></div>
     </section>
-
-    <section id="projects" class="section-shell section-block">
-      <div class="section-heading compact">
-        <p class="eyebrow" data-i18n="projectsEyebrow">Selected projects</p>
-        <h2 data-i18n="projectsTitle">Evidence across backend, systems and desktop development</h2>
-      </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-number">02</p>
-          <h3>Note Taking C</h3>
-          <p data-i18n="noteDescription">Harvard CS50 final project: a filesystem-first C CLI for creating, organizing, searching and editing Markdown notes.</p>
-          <ul class="tags"><li>C</li><li>Meson</li><li>Docker</li><li>POSIX</li><li>CI</li></ul>
-          <a class="text-link" data-i18n="sourceCode" href="https://github.com/ViniOcCode/note-taking-c" rel="noreferrer">Source code <span aria-hidden="true">↗</span></a>
-        </article>
-        <article class="project-card">
-          <p class="project-number">03</p>
-          <h3>Diet Calc</h3>
-          <p data-i18n="dietDescription">University extension web app for educational nutrition estimates, with input validation, health disclaimers and automated tests.</p>
-          <ul class="tags"><li>Python</li><li>Flask</li><li>Jinja</li><li>Pytest</li><li>CI</li></ul>
-          <a class="text-link" data-i18n="liveProject" href="https://diet-calc.onrender.com/" rel="noreferrer">Live project <span aria-hidden="true">↗</span></a>
-        </article>
-        <article class="project-card">
-          <p class="project-number">04</p>
-          <h3>Controle-Prod 1.0</h3>
-          <p data-i18n="controlDescription">University extension desktop application for product, raw-material and production records with operational indicators.</p>
-          <ul class="tags"><li>C#</li><li>WinForms</li><li>SQLite</li><li>MVP</li></ul>
-          <a class="text-link" data-i18n="sourceCode" href="https://github.com/ViniOcCode/Controle-de-Producao-1.0" rel="noreferrer">Source code <span aria-hidden="true">↗</span></a>
-        </article>
-      </div>
+    <section id="projects" class="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><p data-i18n="projectsEyebrow" class="eyebrow">Selected projects</p><h2 data-i18n="projectsTitle" id="projects-title">More ways to build.</h2></div>
+      <article class="project"><span class="project-number" aria-hidden="true">02</span><h3>Note Taking C</h3><div class="project-description"><p data-i18n="noteDescription">A C command-line tool for creating, organizing and searching Markdown notes. Harvard CS50 final project.</p><p class="stack">C · POSIX · Meson · Docker</p></div><div class="project-links"><a data-i18n="sourceCode" href="https://github.com/ViniOcCode/note-taking-c">Source code ↗</a></div></article>
+      <article class="project"><span class="project-number" aria-hidden="true">03</span><h3>Diet Calc</h3><div class="project-description"><p data-i18n="dietDescription">An educational nutrition web app with input validation and automated tests. University extension project.</p><p class="stack">Python · Flask · Pytest</p></div><div class="project-links"><a data-i18n="liveProject" href="https://diet-calc.onrender.com/">Live demo ↗</a><a data-i18n="sourceCode" href="https://github.com/ViniOcCode/diet-calc">Source code ↗</a></div></article>
+      <article class="project"><span class="project-number" aria-hidden="true">04</span><h3>Controle-Prod 1.0</h3><div class="project-description"><p data-i18n="controlDescription">A desktop app for product, raw-material and production records, with operational indicators. University extension project.</p><p class="stack">C# · WinForms · SQLite</p></div><div class="project-links"><a data-i18n="sourceCode" href="https://github.com/ViniOcCode/Controle-de-Producao-1.0">Source code ↗</a></div></article>
     </section>
-
-    <section id="about" class="section-shell section-block about-grid">
-      <div>
-        <p class="eyebrow" data-i18n="aboutEyebrow">About</p>
-        <h2 data-i18n="aboutTitle">Engineering judgment before generated output</h2>
-      </div>
-      <div class="about-copy">
-        <p data-i18n="aboutCopy1">I use AI as an engineering tool, not as a substitute for verification. My workflows combine bounded agent tasks, reusable skills, structured context, automated tests, security checks and human review.</p>
-        <p data-i18n="aboutCopy2">I am completing a Bachelor's degree in Computer Science at Cruzeiro do Sul Virtual and seeking remote internships or junior software and backend roles, with availability for opportunities around Araçatuba, São Paulo.</p>
-        <div class="skills" aria-label="Skills">
-          <span>Python</span><span>REST APIs</span><span>SQL</span><span>Flask</span><span>FastAPI</span><span>PostgreSQL</span><span>OAuth2</span><span>Git</span><span>Docker</span><span>Testing</span><span>C</span><span>C#</span>
-        </div>
-      </div>
-    </section>
+    <section id="about" class="about" aria-labelledby="about-title"><div><p data-i18n="aboutEyebrow" class="eyebrow">About / availability</p><h2 data-i18n="aboutTitle" id="about-title">Software with purpose.</h2></div><div><p data-i18n="aboutCopy1">I am studying Computer Science at Cruzeiro do Sul Virtual and looking for remote internships or junior software and backend roles in Brazil. I am also available for opportunities around Araçatuba, São Paulo.</p><p data-i18n="aboutCopy2">My work connects backend systems, external services and everyday operations. I use AI with bounded tasks, automated tests and human review.</p><ul class="skills" data-i18n-aria="skillsLabel" aria-label="Core skills"><li>Python</li><li>REST APIs</li><li>SQL</li><li>Flask</li><li>FastAPI</li><li>PostgreSQL</li><li>Git</li><li>Docker</li></ul><p data-i18n="english" class="caption">English · EF SET 66/100</p><a data-i18n="contact" class="text-link" href="https://www.linkedin.com/in/viniciusoccavalheiro/">Let’s connect on LinkedIn ↗</a></div></section>
   </main>
-
-  <footer class="site-footer section-shell">
-    <p data-i18n="footerCopy">Built to make the work easy to inspect.</p>
-    <div><a href="https://github.com/ViniOcCode" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/viniciusoccavalheiro/" rel="noreferrer">LinkedIn</a></div>
-  </footer>
-  <script src="script.js"></script>
+  <footer class="shell site-footer"><p data-i18n="footerCopy">Vinicius Cavalheiro / Software developer</p><div><a href="https://github.com/ViniOcCode">GitHub ↗</a><a data-i18n="backTop" href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>
